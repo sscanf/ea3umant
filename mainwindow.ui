@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>834</width>
+    <height>432</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>22</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">MainWindow {
+    background-color: rgb(75,75,75);
+    color: white;
+}
+
+
+QTabWidget::pane {
+    border-top: 2px solid rgb(180,180,180);
+    position: absolute;
+    top: -0.8em;
+    padding-top: 0.8em;
+}
+
+QTabWidget::tab-bar {
+    alignment: center;
+}
+
+QTabBar::tab {
+    color: white;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(116, 116, 118), stop:1 rgb(59, 57, 60));
+    border: 2px solid rgb(180,180,180);
+    border-radius: 4px;
+    padding: 4px;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    color: black;
+    background: rgb(180,180,180);
+}
+
+QTabBar::tab:hover {
+    border-color: rgb(75,75,75);
+}
+
+QtBasicGraph { 
+    color: white; 
+    background-color: qlineargradient(x1:0, y1:1, x2:0, y2:0, stop:0 rgb(59, 57, 60), stop:0.3 rgb(95, 95, 95), stop:1 rgb(74, 72, 74));
+}
+QtBasicGraph[isEmbedded=true] { 
+    color: white; 
+    background-color: rgb(95,95,95);
+}
+
+QGroupBox { 
+    color: white;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(52, 116, 116), stop:1 rgb(59, 57, 60));
+    border: 2px solid rgb(180, 180, 180); 
+    border-radius: 7px;
+    padding-top: 1.5em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0.4em 0.4em 0.1em 0.4em;
+    background: transparent;
+}
+
+QGroupBox[isMetallic=true] {
+    color: black;
+    background-color: white;
+    background-image: url(:/brushedmetal.png);
+}
+
+QGroupBox QLabel {
+    color: rgb(52,226,226);
+}
+
+QGroupBox QLineEdit {
+	color: rgb(52,226,226);
+    background-color: black;
+}
+
+QGroupBox QListWidget {
+	color: rgb(52,226,226);
+    background-color: black;
+}
+
+QGroupBox[isMetallic=true] QLabel {
+    color: black;
+}
+
+
+QSlider::groove:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #B1B1B1, stop:1 #000000);
+    border: 2px solid rgb(180,180,180);
+    border-radius: 6px;
+	color:white;
+}
+
+QSlider::handle:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #DFDFDF, stop: 0.5 #7E7E7E, stop:1 #BCBCBC);
+    border: 2px solid rgb(75,75,75);
+    border-radius: 3px;
+    width: 1.5em;
+}
+
+QSlider::handle:pressed {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #BCBCBC, stop: 0.5 #7E7E7E, stop:1 #DFDFDF);
+    border: 2px solid rgb(180,180,180);
+    border-radius: 3px;
+}
+
+QPushButton#ToggleOverlay {
+    border: 2px solid rgb(75,75,75);
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #DFDFDF, stop: 0.5 #7E7E7E, stop:1 #BCBCBC);
+    border-radius: 5px;    
+    margin: 5px 5px;
+    padding: 3px 3px;
+    color: black;
+    font-weight: bold;
+}
+
+QPushButton#ToggleOverlay:pressed {
+    border: 2px solid rgb(180,180,180);
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #BCBCBC, stop: 0.5 #7E7E7E, stop:1 #DFDFDF);
+    border-radius: 5px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>hola</string>
+      </property>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>60</y>
+         <width>211</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>834</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSassasaas">
+    <property name="title">
+     <string>sassasaas</string>
+    </property>
+   </widget>
+   <addaction name="menuSassasaas"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
