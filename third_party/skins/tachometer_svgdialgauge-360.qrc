@@ -1,0 +1,8 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>svgdialgauge/Tachometer-360/background.svg</file>
+    <file>svgdialgauge/Tachometer-360/needle_shadow.svg</file>
+    <file>svgdialgauge/Tachometer-360/needle.svg</file>
+    <file>svgdialgauge/Tachometer-360/overlay.svg</file>
+</qresource>
+</RCC>
